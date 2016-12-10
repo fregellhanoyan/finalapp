@@ -6,38 +6,74 @@
 	
   /* Preserve aspet ratio */
   min-width: 100%;
-  min-height: 100%;BEBEB;
+  min-height: 100%;
 }
 
+
 .materialize-violet {
-  background-color: #8e24aa !important; 10px;
-    text-align: right;
+  background-color: #8e24aa !important;
 }
+  
 form {
-  background: -webkit-linear-gradient(bottom,#0F0F0F,#681E1E 175px);
-  background: -moz-linear-gradient(bottom, #0F0F0F, #433433 175px);
-  background: linear-gradient(bottom, #0F0F0F, #494848 175px);
+  background: -webkit-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+  background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+  background: linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
   margin: auto;
   position: relative;
-  width: 600px;
-  height: 800px;
+  width: 1300px;
+  height: 600x;
   font-family: Tahoma, Geneva, sans-serif;
   font-size: 14px;
   font-style: italic;
   line-height: 24px;
   font-weight: bold;
-  color: #FFFFFF;
+  color: #09C;
   text-decoration: none;
   border-radius: 10px;
   padding: 10px;
-  border: 1px solid #0F0F0F;
-  border: inset 1px solid #0F0F0F;
+  border: 1px solid #999;
+  border: inset 1px solid #333;
   -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
 }
 
 
+input {
+  width: 375px;
+  display: block;
+  border: 1px solid #999;
+  height: 25px;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+textarea#feedback {
+  width: 375px;
+  height: 150px;
+  display: block;
+}
+
+button {
+  width: 100px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background: #09C;
+  color: #fff;
+  font-family: Tahoma, Geneva, sans-serif;
+  height: 30px;
+  border-radius: 15px;
+  border: 1p solid #999;
+}
+
+input.button:hover {
+  background: #fff;
+  color: #09C;
+}
+textarea:focus, input:focus {
+  border: 1px solid #09C;
+}
 .materialize-red-text {
   color: #e51c23 !important;
 }
@@ -2189,12 +2225,11 @@ html {
  * Remove default margin.
  */
 body {
- background:url(../img/bground.png);
+   background:url(../css/img/main.jpg);
 background-repeat:no-repeat;
 background-size:cover;
 background-attachment: fixed;
 background-position: center center;
-  
   
 }
 
@@ -2301,7 +2336,6 @@ dfn {
  * contexts in Firefox 4+, Safari, and Chrome.
  */
 h1 {
-font-family: Tahoma, Geneva, sans-serif;
   font-size: 2em;
   margin: 0.67em 0;
 }
@@ -2694,7 +2728,8 @@ i.large {
 
 img.responsive-img,
 video.responsive-video {
-  max-width: 100%;
+
+  max-width: 200%;
   height: auto;
 }
 
@@ -2905,16 +2940,18 @@ ul.staggered-list li {
 
 footer.page-footer {
   margin-top: 20px;
-  padding-top:10px;
+  padding-top: 20px;
   background-color: #ee6e73;
-  font-size:35px;
-  color:black;
-  font-family:Lucida Calligraphy;
 }
-nav3 {
-	padding-top: -10px;
-	font-size:20px;
+
+footer.page-footer .footer-copyright {
+  overflow: hidden;
+  height: 50px;
+  line-height: 50px;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(51, 51, 51, 0.08);
 }
+
 table, th, td {
   border: none;
 }
@@ -3022,7 +3059,7 @@ td, th {
   table.responsive-table.bordered th {
     border-bottom: 0;
     border-left: 0;
-  }  
+  }
   table.responsive-table.bordered td {
     border-left: 0;
     border-right: 0;
@@ -3171,7 +3208,6 @@ nav ul a span.badge {
   margin-left: 4px;
   line-height: 22px;
   height: 22px;
-  font-family: Lucida Calligraphy;
 }
 
 .side-nav span.badge.new,
@@ -4104,7 +4140,6 @@ nav .brand-logo {
   font-size: 2.1rem;
   padding: 0;
   white-space: nowrap;
-  font-family: Copperplate gothic bold;
 }
 
 nav .brand-logo.center {
@@ -4518,12 +4553,13 @@ small {
 .card {
   position: relative;
   margin: 0.5rem 0 1rem 0;
-  background-color: #C0C0C0;
+  background-color: #00E2FF;
   transition: box-shadow .25s;
   border-radius: 2px;
 }
 
 .card .card-title {
+
   font-size: 24px;
   font-weight: 300;
 }
@@ -4609,6 +4645,7 @@ small {
 }
 
 .card.horizontal .card-stacked .card-content {
+
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -4639,7 +4676,7 @@ small {
 }
 
 .card .card-image .card-title {
-  color: #d50000;
+color: #D703C5;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -4647,16 +4684,18 @@ small {
 }
 
 .card .card-content {
+
   padding: 20px;
   border-radius: 0 0 2px 2px;
 }
 
 .card .card-content p {
   margin: 0;
-  color: inherit;
+ 
 }
 
 .card .card-content .card-title {
+
   line-height: 48px;
 }
 
@@ -5710,7 +5749,7 @@ button:focus {
 
 label {
   font-size: 0.8rem;
-  color: #FF0000;
+  color: #9e9e9e;
 }
 
 /* Text Inputs + Textarea
